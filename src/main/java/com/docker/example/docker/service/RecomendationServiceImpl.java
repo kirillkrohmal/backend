@@ -9,15 +9,17 @@ import java.util.List;
 
 @Service
 public class RecomendationServiceImpl implements RecomendationService {
+    @Autowired
     public RecomendationRepository recomendationRepository;
 
-    @Autowired
-    public RecomendationServiceImpl(RecomendationRepository recomendationRepository) {
-        this.recomendationRepository = recomendationRepository;
-    }
 
     @Override
     public List<Recomendation> listRecomendation() {
         return recomendationRepository.findAll();
+    }
+
+    @Override
+    public void saveRequest(Recomendation recomendation) {
+        recomendationRepository.saveAndFlush(recomendation);
     }
 }

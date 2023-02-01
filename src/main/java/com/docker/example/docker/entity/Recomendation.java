@@ -15,10 +15,10 @@ public class Recomendation {
     @Column(name = "title", length = 45)
     private String title;
 
-    @Column(name = "salary")
+    @Column(name = "salary", length = 45)
     private int salary;
 
-    @Column(name = "description", length = 245)
+    @Column(name = "description", length = 255)
     private String description;
 
     public Recomendation() {

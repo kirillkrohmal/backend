@@ -10,5 +10,5 @@ import java.util.List;
 public interface RecomendationService {
     List<Recomendation> listRecomendation();
 
-
+    void saveRequest(Recomendation recomendation);
 }
