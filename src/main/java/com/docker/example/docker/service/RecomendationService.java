@@ -9,6 +9,4 @@ import java.util.List;
 @Service
 public interface RecomendationService {
     List<Recomendation> listRecomendation();
-
-    void saveRequest(Recomendation recomendation);
 }

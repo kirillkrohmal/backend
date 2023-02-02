@@ -18,8 +18,4 @@ public class RecomendationServiceImpl implements RecomendationService {
         return recomendationRepository.findAll();
     }
 
-    @Override
-    public void saveRequest(Recomendation recomendation) {
-        recomendationRepository.saveAndFlush(recomendation);
-    }
 }

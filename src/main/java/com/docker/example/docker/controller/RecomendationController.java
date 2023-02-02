@@ -14,10 +14,8 @@ public class RecomendationController {
     private RecomendationServiceImpl recomendationService;
 
 
-    @GetMapping("recomendation")
+    @GetMapping("/api/recommendations")
     public List<Recomendation> getRecomendation( Recomendation recomendation) {
-        recomendationService.saveRequest(recomendation);
-
         return recomendationService.listRecomendation();
     }
 }
